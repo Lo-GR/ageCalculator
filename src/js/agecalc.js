@@ -30,7 +30,7 @@ export class AgeCalculator {
   }
   compareLE(lifeExpectancy){
     if(lifeExpectancy > this.age){
-      return "test"
+      return `you have ${lifeExpectancy-this.age} years left to live on this planet`
     }else {
       return `you lived ${this.age - lifeExpectancy} years over the life expectancy of this planet`;
     }
