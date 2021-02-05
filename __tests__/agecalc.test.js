@@ -1,4 +1,5 @@
 import {AgeCalculator} from '../src/js/agecalc.js';
+import $ from 'jquery';
 
 describe('AgeCalculator', () => {
   let testObject;

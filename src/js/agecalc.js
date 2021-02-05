@@ -29,6 +29,6 @@ export class AgeCalculator {
     }
   }
   surpassedLE(lifeExpectancy){
-    return this.age - lifeExpectancy;
+    return `you lived ${this.age - lifeExpectancy} years over the life expectancy of this planet`;
   }
 }
