@@ -1,7 +1,7 @@
 import {AgeCalculator} from '../src/js/agecalc.js';
 
 describe('AgeCalculator', () => {
-
+  let testObject;
   beforeEach(() => {
     testObject = new AgeCalculator(20);
   });
