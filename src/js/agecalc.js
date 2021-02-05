@@ -28,4 +28,7 @@ export class AgeCalculator {
       return "no planet selected";
     }
   }
+  surpassedLE(lifeExpectancy){
+    
+  }
 }

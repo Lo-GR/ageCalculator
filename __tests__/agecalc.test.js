@@ -38,7 +38,8 @@ describe('AgeCalculator', () => {
   test('should return life expectancy of Jupiter based on life expectancy of object, rounded to nearest integer',()=>{
     expect(testObject.leOnPlanets("jupiter")).toEqual(7)
   })
-  test('should return years for surpassed life expectancy')
+  test('should return years for surpassed life expectancy', ()=>{
       let lifeExpectancy = testObject.leOnPlanets("jupiter")
-      expect(testObject.surpassedLE(lifeExpectancy).toEqual(13))
+      expect(testObject.surpassedLE(lifeExpectancy)).toEqual(13);
+    })
 });
