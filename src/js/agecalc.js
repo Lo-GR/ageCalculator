@@ -10,5 +10,7 @@ export class AgeCalculator {
     let ageReturn = this.age/.62;
     return Math.round(ageReturn);
   }
-  
+  marsAge(){
+    
+  }
 }
