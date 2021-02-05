@@ -16,6 +16,10 @@ export class AgeCalculator {
     return Math.round(this.age/11.86);
   }
   leOnPlanets(planet){
-    
+    if (planet = "venus"){
+      return Math.round(this.lifeExpectancy/.24)
+    } else {
+      return "no planet selected"
+    }
   }
 }
