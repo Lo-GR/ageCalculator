@@ -18,8 +18,7 @@ export class AgeCalculator {
   leOnPlanets(planet){
     if (planet = "venus"){
       return Math.round(this.lifeExpectancy/.24)
-    } else {
-      // return "no planet selected"
-    }
+    } 
+
   }
 }
