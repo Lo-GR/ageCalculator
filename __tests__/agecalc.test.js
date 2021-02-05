@@ -10,7 +10,7 @@ describe('AgeCalculator', () => {
     expect(testObject.age).toEqual(20);
   });
 
-  test('should return age in Mercury years based on age of object, rounded to largest integer', () => {
-    expect(testObject.mercuryAge).toEqual(83)
-  }
+  test('should return age in Mercury years based on age of object, rounded to nearest integer', () => {
+    expect(testObject.mercuryAge()).toEqual(83)
+  })
 });
