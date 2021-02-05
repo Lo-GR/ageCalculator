@@ -20,6 +20,8 @@ export class AgeCalculator {
       return Math.round(this.lifeExpectancy/.24);
     } else if(planet === "venus") {
       return Math.round(this.lifeExpectancy/.62);
+    }else if(planet === "mars") {
+      return "test";
     }else {
       return "no planet selected";
     }
