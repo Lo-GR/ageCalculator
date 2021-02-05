@@ -35,4 +35,7 @@ describe('AgeCalculator', () => {
   test('should return life expectancy of Mercury based on life expectancy of object, rounded to nearest integer',()=>{
     expect(testObject.leOnPlanets("mars")).toEqual(43)
   })
+  test('should return life expectancy of Jupiter based on life expectancy of object, rounded to nearest integer',()=>{
+    expect(testObject.leOnPlanets("jupiter")).toEqual(7)
+  })
 });
