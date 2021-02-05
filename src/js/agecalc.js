@@ -29,6 +29,10 @@ export class AgeCalculator {
     }
   }
   compareLE(lifeExpectancy){
-    return `you lived ${this.age - lifeExpectancy} years over the life expectancy of this planet`;
+    if(lifeExpectancy > this.age){
+      return "test"
+    }else {
+      return `you lived ${this.age - lifeExpectancy} years over the life expectancy of this planet`;
+    }
   }
 }
