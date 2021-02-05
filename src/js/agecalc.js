@@ -15,4 +15,5 @@ export class AgeCalculator {
   jupiterAge(){
     return Math.round(this.age/11.86);
   }
+  
 }
