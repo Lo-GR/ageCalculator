@@ -21,4 +21,8 @@ describe('AgeCalculator', () => {
   test('should return age in Mars years based on age of object, rounded to the nearest integer', ()=>{
     expect(testObject.marsAge()).toEqual(11)
   })
+
+  test('should return age in Jupiter years based on age of object, rounded to nearest integer', ()=>{
+    expect(testObject.jupiterAge()).toEqual(2)
+  })
 });
