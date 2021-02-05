@@ -6,4 +6,6 @@ export class AgeCalculator {
     let ageReturn = this.age/.24
     return Math.round(ageReturn);
   }
+
+  
 }

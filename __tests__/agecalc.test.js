@@ -13,4 +13,8 @@ describe('AgeCalculator', () => {
   test('should return age in Mercury years based on age of object, rounded to nearest integer', () => {
     expect(testObject.mercuryAge()).toEqual(83)
   })
+
+  test('should return age in venus years based on age of object, rounded to nearest integer', () => {
+    expect(testObject.venusAge()).toEqual(32)
+  })
 });
