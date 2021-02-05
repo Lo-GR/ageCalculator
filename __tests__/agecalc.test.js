@@ -24,10 +24,11 @@ describe('AgeCalculator', () => {
     expect(testObject.jupiterAge()).toEqual(2)
   })
 
-  test('should return life expectancy of Mercury based on a life expectancy of object, rounded to nearest integer', ()=>{
-    expect(testObject.leOnPlanets("mercury")).toEqual(333)
-  })
   test('should return "no planet selected" when no applicable planet is entered in life expectancy function', ()=> {
     expect(testObject.leOnPlanets("test")).toEqual("no planet selected")
   })
+  // test('should return life expectancy of Mercury based on a life expectancy of object, rounded to nearest integer', ()=>{
+  //   expect(testObject.leOnPlanets("mercury")).toEqual(333)
+  // })
+
 });
