@@ -6,8 +6,7 @@ export class AgeCalculator {
     return Math.round(this.age/.24);
   }
   venusAge(){
-    let ageReturn = this.age/.62;
-    return Math.round(ageReturn);
+    return Math.round(this.age/.62);
   }
   marsAge(){
     let ageReturn = this.age/1.88;
