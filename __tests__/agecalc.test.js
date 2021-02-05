@@ -40,6 +40,7 @@ describe('AgeCalculator', () => {
   })
   test('should return years for surpassed life expectancy', ()=>{
       let lifeExpectancy = testObject.leOnPlanets("jupiter")
-      expect(testObject.surpassedLE(lifeExpectancy)).toEqual(13);
+      expect(testObject.surpassedLE(lifeExpectancy)).toEqual("you lived 13 years over the life expectancy of this planet");
     })
+    
 });
