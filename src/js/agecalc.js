@@ -29,6 +29,6 @@ export class AgeCalculator {
     }
   }
   surpassedLE(lifeExpectancy){
-    
+    return this.age - lifeExpectancy;
   }
 }
