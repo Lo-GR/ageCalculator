@@ -4,18 +4,33 @@
     <title>Galactic Age Calculator</title>
   </head>
 <body>
+  <div class="container">
   <form id="ageForm">
-    <label for="age">Enter Age</label>
-    <input id="age" type="text">
-    <label for="life">Enter Life Expectancy</label>
-    <input id="life" type="text">
-    <button type="submit">Submit</button>
+    <div class="form-group">
+      <label for="age">Enter Age</label>
+      <input id="age" class="form-control"type="text">
+      <label for="life">Enter Life Expectancy</label>
+      <input id="life" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+      <select class="form-control" id="planets">
+        <option value="mercury">Mercury</option>
+        <option value="venus">Venus</option>
+        <option value="mars">Mars</option>
+        <option value="jupiter">Jupiter</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-info">Submit</button>
   </form>
-  <!-- <select class="form-control" id="planets">
-    <option value="mercury">Mercury</option>
-    <option value="venus">Venus</option>
-    <option value="mars">Mars</option>
-    <option value="jupiter">Jupiter</option>
-  </select> -->
+  <div class="information">
+    <ul>
+      <li>Your age: <span id="yourAge"></span></li>
+      <li>Your Life Expectancy: <span id="yourLE"></span></li>
+      <li>Your planet: <span id="yourPlanet"></span></li>
+      <li>Your age on that planet: <span id="yourAgePlanet"></span></li>
+      <li>Your Life Expectancy on that planet: <span id="yourLEPlanet"></span></li>
+      <li>Your life compared to the life expectancy of that planet: <span id="yourRemaining"></span></li>
+  </div>
+</div>
 </body>
 </html>

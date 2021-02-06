@@ -10,6 +10,8 @@ $(document).ready(function(){
   $("#ageForm").submit(function(event){
     event.preventDefault();
     const ageObject = new AgeCalculator($("#age").val(), $("#life").val());
-    console.log("age: " + ageObject.age + " Life Expectancy: " + ageObject.lifeExpectancy);
+    $(".information").show();
+    $("#yourAge").text(ageObject.age);
+    $("#yourLE").text(ageObject.lifeExpectancy);
   })
 });
