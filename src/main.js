@@ -9,6 +9,7 @@ import { AgeCalculator } from './js/agecalc';
 $(document).ready(function(){
   $("#ageForm").submit(function(event){
     event.preventDefault();
-    const ageObject = new AgeCalculator($("#age").val(), ("#le").val())
+    const ageObject = new AgeCalculator($("#age").val(), $("#life").val());
+    console.log("age: " + ageObject.age + " Life Expectancy: " + ageObject.lifeExpectancy);
   })
 });
