@@ -32,4 +32,26 @@ $(document).ready(function(){
     $("#yourLEPlanet").text(planetLE);
     $("#yourRemaining").text(ageObject.compareLE(planetLE));
   })
+  $("#ven").click(function(){
+    let ageObject = new AgeCalculator($("#age").val(), $("#life").val());
+    $(".information").show();
+    $("#yourAge").text(ageObject.age);
+    $("#yourLE").text(ageObject.lifeExpectancy);
+    $("#yourPlanet").text("Venus");
+    $("#yourAgePlanet").text(ageObject.venusAge());
+    let planetLE = ageObject.leOnPlanets("venus");
+    $("#yourLEPlanet").text(planetLE);
+    $("#yourRemaining").text(ageObject.compareLE(planetLE));
+  })
+  $("#mer").click(function(){
+    let ageObject = new AgeCalculator($("#age").val(), $("#life").val());
+    $(".information").show();
+    $("#yourAge").text(ageObject.age);
+    $("#yourLE").text(ageObject.lifeExpectancy);
+    $("#yourPlanet").text("Mercury");
+    $("#yourAgePlanet").text(ageObject.mercuryAge());
+    let planetLE = ageObject.leOnPlanets("mercury");
+    $("#yourLEPlanet").text(planetLE);
+    $("#yourRemaining").text(ageObject.compareLE(planetLE));
+  })
 });
