@@ -5,31 +5,31 @@
   </head>
 <body>
   <div class="container">
-  <form id="ageForm">
-    <div class="form-group">
-      <label for="age">Enter Age</label>
-      <input id="age" class="form-control"type="number">
-      <label for="life">Enter Life Expectancy</label>
-      <input id="life" class="form-control" type="number">
+    <form id="ageForm">
+      <div class="form-group">
+        <label for="age">Enter Age</label>
+        <input id="age" class="form-control"type="number">
+        <label for="life">Enter Life Expectancy</label>
+        <input id="life" class="form-control" type="number">
+      </div>
+      <button type="submit" class="btn btn-info" id="sub">Submit Age</button>
+    </form>
+    <button type="button" class="btn btn-info" id="resub">Resubmit Age</button>
+    <div class="planetButtons">
+      <button type="button" class="btn btn-secondary" id="mer">Mercury</button>
+      <button type="button" class="btn btn-secondary" id="ven">Venus</button>
+      <button type="button" class="btn btn-secondary" id="mar">Mars</button>
+      <button type="button" class="btn btn-secondary" id="jup">Jupiter</button>
     </div>
-    <button type="submit" class="btn btn-info" id="sub">Submit Age</button>
-    <button type="submit" class="btn btn-info" id="resub">Resubmit Age</button>
-  </form>
-  <div class="planetButtons">
-    <button type="button" class="btn btn-secondary" id="mer">Mercury</button>
-    <button type="button" class="btn btn-secondary" id="ven">Venus</button>
-    <button type="button" class="btn btn-secondary" id="mar">Mars</button>
-    <button type="button" class="btn btn-secondary" id="jup">Jupiter</button>
+    <div class="information">
+      <ul>
+        <li>Your age: <span id="yourAge"></span></li>
+        <li>Your Life Expectancy: <span id="yourLE"></span></li>
+        <li>Your planet: <span id="yourPlanet"></span></li>
+        <li>Your age on that planet: <span id="yourAgePlanet"></span></li>
+        <li>Your Life Expectancy on that planet: <span id="yourLEPlanet"></span></li>
+        <li>Your life compared to the life expectancy of that planet: <span id="yourRemaining"></span></li>
+    </div>
   </div>
-  <div class="information">
-    <ul>
-      <li>Your age: <span id="yourAge"></span></li>
-      <li>Your Life Expectancy: <span id="yourLE"></span></li>
-      <li>Your planet: <span id="yourPlanet"></span></li>
-      <li>Your age on that planet: <span id="yourAgePlanet"></span></li>
-      <li>Your Life Expectancy on that planet: <span id="yourLEPlanet"></span></li>
-      <li>Your life compared to the life expectancy of that planet: <span id="yourRemaining"></span></li>
-  </div>
-</div>
 </body>
 </html>

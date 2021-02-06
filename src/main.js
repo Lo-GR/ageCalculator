@@ -6,19 +6,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import { AgeCalculator } from './js/agecalc';
 $(document).ready(function(){
-  let age;
-  let le;
   $("#ageForm").submit(function(event){
     event.preventDefault();
-    age =$("#age").val()
-    le = $("#life").val()
     $(".planetButtons").show();
     $("#resub").show();
-    $("#sub").hide();
-  })
+    $("#ageForm").hide();
+  });
   $("#resub").click(function(){
+    $("#ageForm").show();
     $(".information").hide();
-  })
+    $(".planetButtons").hide();
+    $("#resub").hide();
+  });
   $("#mer").click(function(){
     let ageObject = new AgeCalculator($("#age").val(), $("#life").val());
     $(".information").show();
@@ -29,7 +28,7 @@ $(document).ready(function(){
     let planetLE = ageObject.leOnPlanets("mercury");
     $("#yourLEPlanet").text(planetLE);
     $("#yourRemaining").text(ageObject.compareLE(planetLE));
-  })
+  });
   $("#ven").click(function(){
     let ageObject = new AgeCalculator($("#age").val(), $("#life").val());
     $(".information").show();
@@ -40,7 +39,7 @@ $(document).ready(function(){
     let planetLE = ageObject.leOnPlanets("venus");
     $("#yourLEPlanet").text(planetLE);
     $("#yourRemaining").text(ageObject.compareLE(planetLE));
-  })
+  });
   $("#mar").click(function(){
     let ageObject = new AgeCalculator($("#age").val(), $("#life").val());
     $(".information").show();
@@ -51,7 +50,7 @@ $(document).ready(function(){
     let planetLE = ageObject.leOnPlanets("mars");
     $("#yourLEPlanet").text(planetLE);
     $("#yourRemaining").text(ageObject.compareLE(planetLE));
-  })
+  });
   $("#jup").click(function(){
     let ageObject = new AgeCalculator($("#age").val(), $("#life").val());
     $(".information").show();
@@ -62,5 +61,5 @@ $(document).ready(function(){
     let planetLE = ageObject.leOnPlanets("jupiter");
     $("#yourLEPlanet").text(planetLE);
     $("#yourRemaining").text(ageObject.compareLE(planetLE));
-  })
+  });
 });
