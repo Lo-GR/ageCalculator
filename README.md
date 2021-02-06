@@ -34,23 +34,27 @@
 * **npm**
 
 ## _Description_
-This is business logic to be used to make a web application that will take a users inputted age and average life expectancy and provide comparisons to planets solar years and what life expectancy would be on respective planets. A sample 
+This is business logic to be used to make a web application that will take a users inputted age and average life expectancy and provide comparisons to Mercury, Venus, Mars, and Jupiter's solar years and what life expectancy would be on respective planets. A sample web application is provided in "Index.html"
 
 This is a practice project for practicing TDD, jest, npm, ES6 features such as classes and template literals, and webpacks for a class at Epicodus.
 
 ## _Setup/Installation_
 
 > Repository: https://github.com/Lo-GR/ageCalculator.git
-1. Clone the above repository from Github
-2. Navigate to the root directory of the project in your terminal and type "open index.html" to view the project in your default browser.
+1. Clone the above repository from Github.
+2. Navigate to the root directory of the project in your terminal and type "npm install" to install development environment needed.
+3. In your terminal, type "npm run start" to view the project in your default browser on a live server.
+4. In your terminal, type "npm run build" to bundle the project with applicable webpacks implemented.
 3. Open the project in your text editor to view the code.
 
 ## _Known Bugs_
 * No known bugs at this time. Please contact a contributor to report any bugs found during use.
 
 ## _Future Updates_
-* UI
+* More fleshed out UI
 * Images and animations
+* Add a version of planet age calculators that is a refactor of all of them put together
+* More planets
 
 ## _License_
 
