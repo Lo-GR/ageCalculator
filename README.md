@@ -34,7 +34,7 @@
 * **npm**
 
 ## _Description_
-This is business logic to be used to make a web application that will take a users inputted age and average life expectancy and provide comparisons to planets solar years and what life expectancy would be on respective planets.
+This is business logic to be used to make a web application that will take a users inputted age and average life expectancy and provide comparisons to planets solar years and what life expectancy would be on respective planets. A sample 
 
 This is a practice project for practicing TDD, jest, npm, ES6 features such as classes and template literals, and webpacks for a class at Epicodus.
 

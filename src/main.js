@@ -5,7 +5,6 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import { AgeCalculator } from './js/agecalc';
-
 $(document).ready(function(){
   let age;
   let le;
@@ -16,7 +15,6 @@ $(document).ready(function(){
     $(".planetButtons").show();
     $("#resub").show();
     $("#sub").hide();
-    
   })
   $("#resub").click(function(){
     $(".information").hide();
