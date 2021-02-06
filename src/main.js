@@ -13,5 +13,7 @@ $(document).ready(function(){
     $(".information").show();
     $("#yourAge").text(ageObject.age);
     $("#yourLE").text(ageObject.lifeExpectancy);
+    $("#yourPlanet").text($("#planets").val());
+    $("#yourAgePlanet").text(ageObject.($("#planets").val()));
   })
 });
