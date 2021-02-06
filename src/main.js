@@ -54,4 +54,15 @@ $(document).ready(function(){
     $("#yourLEPlanet").text(planetLE);
     $("#yourRemaining").text(ageObject.compareLE(planetLE));
   })
+  $("#jup").click(function(){
+    let ageObject = new AgeCalculator($("#age").val(), $("#life").val());
+    $(".information").show();
+    $("#yourAge").text(ageObject.age);
+    $("#yourLE").text(ageObject.lifeExpectancy);
+    $("#yourPlanet").text("Jupiter");
+    $("#yourAgePlanet").text(ageObject.jupiterAge());
+    let planetLE = ageObject.leOnPlanets("jupiter");
+    $("#yourLEPlanet").text(planetLE);
+    $("#yourRemaining").text(ageObject.compareLE(planetLE));
+  })
 });

@@ -46,5 +46,4 @@ test('should return string for surpassed life expectancy', ()=>{
     let lifeExpectancy = testObject.leOnPlanets("venus")
     expect(testObject.compareLE(lifeExpectancy)).toEqual("you have 109 years left to live on this planet");
   })
-    
 });
