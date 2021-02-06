@@ -7,13 +7,29 @@ import './css/styles.css';
 import { AgeCalculator } from './js/agecalc';
 
 $(document).ready(function(){
+  let age;
+  let le;
   $("#ageForm").submit(function(event){
     event.preventDefault();
-    const ageObject = new AgeCalculator($("#age").val(), $("#life").val());
+    age =$("#age").val()
+    le = $("#life").val()
+    $(".planetButtons").show();
+    $("#resub").show();
+    $("#sub").hide();
+    
+  })
+  $("#resub").click(function(){
+    $(".information").hide();
+  })
+  $("#mer").click(function(){
+    let ageObject = new AgeCalculator($("#age").val(), $("#life").val());
     $(".information").show();
     $("#yourAge").text(ageObject.age);
     $("#yourLE").text(ageObject.lifeExpectancy);
-    $("#yourPlanet").text($("#planets").val());
-    $("#yourAgePlanet").text(ageObject.($("#planets").val()));
+    $("#yourPlanet").text("Mercury");
+    $("#yourAgePlanet").text(ageObject.mercuryAge());
+    let planetLE = ageObject.leOnPlanets("mercury");
+    $("#yourLEPlanet").text(planetLE);
+    $("#yourRemaining").text(ageObject.compareLE(planetLE));
   })
 });

@@ -1,3 +1,13 @@
 .information{
   display: none;
 }
+.planetButtons{
+  display: none;
+  margin: 10px;
+}
+#ageForm{
+  margin: 10px;
+}
+#resub{
+  display: none;
+}
