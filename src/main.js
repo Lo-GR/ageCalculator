@@ -43,14 +43,14 @@ $(document).ready(function(){
     $("#yourLEPlanet").text(planetLE);
     $("#yourRemaining").text(ageObject.compareLE(planetLE));
   })
-  $("#mer").click(function(){
+  $("#mar").click(function(){
     let ageObject = new AgeCalculator($("#age").val(), $("#life").val());
     $(".information").show();
     $("#yourAge").text(ageObject.age);
     $("#yourLE").text(ageObject.lifeExpectancy);
-    $("#yourPlanet").text("Mercury");
-    $("#yourAgePlanet").text(ageObject.mercuryAge());
-    let planetLE = ageObject.leOnPlanets("mercury");
+    $("#yourPlanet").text("Mars");
+    $("#yourAgePlanet").text(ageObject.marsAge());
+    let planetLE = ageObject.leOnPlanets("mars");
     $("#yourLEPlanet").text(planetLE);
     $("#yourRemaining").text(ageObject.compareLE(planetLE));
   })
