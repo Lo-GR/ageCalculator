@@ -1,5 +1,4 @@
 import {AgeCalculator} from '../src/js/agecalc.js';
-import $ from 'jquery';
 
 describe('AgeCalculator', () => {
   let testObject;
@@ -39,13 +38,13 @@ describe('AgeCalculator', () => {
   test('should return life expectancy of Jupiter based on life expectancy of object, rounded to nearest integer',()=>{
     expect(testObject.leOnPlanets("jupiter")).toEqual(7)
   })
-  test('should return string for surpassed life expectancy', ()=>{
-      let lifeExpectancy = testObject.leOnPlanets("jupiter")
-      expect(testObject.compareLE(lifeExpectancy)).toEqual("you lived 13 years over the life expectancy of this planet");
-    })
-    test('should return string for amount of years left compared planets life expectancy', ()=> {
-      let lifeExpectancy = testObject.leOnPlanets("venus")
-      expect(testObject.compareLE(lifeExpectancy)).toEqual("you have 109 years left to live on this planet");
-    })
+test('should return string for surpassed life expectancy', ()=>{
+    let lifeExpectancy = testObject.leOnPlanets("jupiter")
+    expect(testObject.compareLE(lifeExpectancy)).toEqual("you lived 13 years over the life expectancy of this planet");
+  })
+  test('should return string for amount of years left compared planets life expectancy', ()=> {
+    let lifeExpectancy = testObject.leOnPlanets("venus")
+    expect(testObject.compareLE(lifeExpectancy)).toEqual("you have 109 years left to live on this planet");
+  })
     
 });
